@@ -19,8 +19,8 @@ class Item:
 		self.parent = parent
 		parent.add_child(self)
 		# cut off text, max width is 29 characters at std font
-		if len(text) > 25: 
-			self.text = text[:25] + "..."
+		if len(text) > 29: 
+			self.text = text[:26] + "..."
 		else:
 			self.text = text
 
@@ -35,7 +35,7 @@ class Menu:
 			self.children.append(parent)  # up a folder
 		self.parent = parent
 		self.current_selected = 0  # index that should be highlighted
-		if len(text) > 25:
+		if len(text) > 29:
 			self.text = text[:25] + "..."
 		else:
 			self.text = text
@@ -108,7 +108,6 @@ class Menu:
 		self.draw_menu()
 			
 
-
 main_menu = Menu("main", "Main Menu")
 first_menu = Menu(main_menu, "First Sub-Menu")
 second_menu = Menu(main_menu, "Second Sub-Menu")
@@ -117,10 +116,6 @@ first_first_menu = Menu(first_menu, "First Sub-Sub-Menu")
 first_item = Item(main_menu, "first item", lambda: print("first item selected"))
 second_item = Item(first_menu, "second item", lambda: print("second item selected"))
 third_item = Item(first_first_menu, "second item", lambda: print("third item selected"))
-
-# for x in range(15):
-# 	Item(main_menu, str(x), lambda: print(x))
-
 
 menu = main_menu
 menu.draw_menu()
