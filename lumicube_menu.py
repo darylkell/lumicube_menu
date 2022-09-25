@@ -1,5 +1,9 @@
-import time
 from typing import Callable
+
+# to-do: fix the screen blink, currently re-drawing by clearing screen which causes 
+# blink. Instead need to re-write across the whole screen to update the screen cleanly
+
+
 
 # a line should be spaced 18 high at font 1
 # 13 lines fit on screen
