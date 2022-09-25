@@ -68,7 +68,6 @@ class Menu:
 		self.draw_menu()
 
 	def draw_menu(self):
-		print(self.current_selected)
 		# draw all children on screen, highlighting the relevant current_selected
 		# menu title at the top
 		screen.draw_rectangle(0, 0, 320, 240, black) # black the screen
@@ -109,7 +108,7 @@ class Menu:
 		self.draw_menu()
 			
 
-# main_menu = Menu("main", "Main Menu")
+
 main_menu = Menu("main", "Main Menu")
 first_menu = Menu(main_menu, "First Sub-Menu")
 second_menu = Menu(main_menu, "Second Sub-Menu")
@@ -119,8 +118,8 @@ first_item = Item(main_menu, "first item", lambda: print("first item selected"))
 second_item = Item(first_menu, "second item", lambda: print("second item selected"))
 third_item = Item(first_first_menu, "second item", lambda: print("third item selected"))
 
-for x in range(15):
-	Item(main_menu, str(x), lambda: print(x))
+# for x in range(15):
+# 	Item(main_menu, str(x), lambda: print(x))
 
 
 menu = main_menu
