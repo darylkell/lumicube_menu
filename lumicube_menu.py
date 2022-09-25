@@ -70,7 +70,6 @@ class Menu:
 	def draw_menu(self):
 		# draw all children on screen, highlighting the relevant current_selected
 		# menu title at the top
-		screen.draw_rectangle(0, 0, 320, 240, black) # black the screen
 		title = f" --- {self.text[:19]} ---"
 		screen.write_text(0, 0, f"{title:^29}", black, white)  # menu title at the top
 		line = 1
