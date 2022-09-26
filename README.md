@@ -9,7 +9,7 @@ The provided script demonstrates some default projects (by Abstract Foundry) tha
 
 <br><br>
 _How to use it?_<br>
-Have a look at the example script.  It uses object-oriented programming (OOP) to create menus, and items in the menus.  Menus are able to hold other menus, and items. Menus are for displaying other menus and items, while items are for running scripts/functions.
+Have a look at the example script.  It uses object-oriented programming (OOP) to create menus, and items in the menus.  Menus are able to hold other menus, and items. Menus are for displaying other menus and items, while items are for running scripts/functions.<br>
 You need to keep track of the buttons as they are being pressed, so this bit of code sets that up:
 `buttons_last_pressed = {
 	"top": buttons.top_pressed_count,
@@ -28,7 +28,7 @@ scripts_menu = Menu(main_menu, "Scripts")
 first_item = Item("Rain", task_runner, rain)
 second_item = Item("Lava", task_runner, lava)
 third_item = Item("Statistics", None, stats)`
-Here we have created three items, and two menus. One of the menus is placed in the main (top-most) menu.
+Here we have created three items, and two menus. One of the menus is placed in the main (top-most) menu.<br>
 The items are given a title for the menu, a task_runner object to run in (or None if not desired to be run in a thread), and a function that will be called when the item is selected from the menu.
 
 Now we place those items in to their 'homes' in the menu:
