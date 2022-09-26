@@ -18,7 +18,7 @@ You'll need the `Menu`, `Item`, and `ThreadedRunner` classes, so copy those in f
     from typing import Callable
     from threading import Thread
 
-Now that you have the classes in the script that you'll use to create your menu, you also need functions that you want to run when you select items in the menu you're creating. The example here has copied in code from the Lumicube's default projects and are defined in the following functions: `rain`, `lava` and a modified `stats` function.
+Now that you have the classes in the script that you'll use to create your menu, you also need functions that you want to run when you select items in the menu you're creating. The example here has copied in code from the Lumicube's default projects and are defined in the following functions: `rain`, `lava` and a modified `stats` function. You'll notice that the two functions that are created later as Items have a task_runner assigned to them. That means the while loop within their function must yield every so often (easiest to add every loop). Use the example script to see how this works.
 
 You need to keep track of the buttons as they are being pressed, so this bit of code sets that up:<br>
 
