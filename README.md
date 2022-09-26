@@ -61,14 +61,14 @@ This while loop keeps track of which menu is currently being displayed on screen
     while True:
         menu = menu.check_buttons()`
 
-The end result of this example code looks like this:
+The end result of this example code looks like this on the rear screen:
 ```      --- Main Menu ---
 > Scripts
 Statistics
 ```
 You can see in the main menu, that the 'Scripts' menu has been preceded with a '> ' to show that 'Scripts' is another menu that can be navigated into.  'Statistics' doesn't have that '>' symbol - it is a menu item that will run a script.
 
-When you select '> Scripts', the following menu appears:
+When you select '> Scripts', the following menu appears on the rear screen:
 ```       --- Scripts ---
 ..
 Rain
