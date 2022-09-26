@@ -1,6 +1,6 @@
 # lumicube_menu
 
-What is it?<br>
+_What is it?_<br>
 A menu system that can be employed for the (optional) rear screen of Abstract Foundry's Lumicube.
 
 As the Lumicube has 3 rear buttons, the menu allows the top and bottom buttons to navigate on the rear screen, and the middle button to select an option from the menu that you have selected. In this way you can run scripts from the menu, instead of logging into the Lumicube's web interface.
@@ -8,7 +8,7 @@ As the Lumicube has 3 rear buttons, the menu allows the top and bottom buttons t
 The provided script demonstrates some default projects (by Abstract Foundry) that can be run from the menu.  
 
 <br><br>
-How to use it?<br>
+_How to use it?_<br>
 Have a look at the example script.  It uses object-oriented programming (OOP) to create menus, and items in the menus.  Menus are able to hold other menus, and items. Menus are for displaying other menus and items, while items are for running scripts/functions.
 You need to keep track of the buttons as they are being pressed, so this bit of code sets that up:
 `buttons_last_pressed = {
