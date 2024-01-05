@@ -75,3 +75,7 @@ Rain
 Lava
 ```
 The '..' in the 'Scripts' menu is an option to go back to the Main Menu, which is the parent of the 'Scripts' menu.
+
+### Security Warning
+------
+Please properly vet anything you download from the internet, including this script. It could do anything.
