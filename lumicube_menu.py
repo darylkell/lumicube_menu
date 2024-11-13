@@ -130,7 +130,7 @@ class Menu:
 			# can only show 13 rows on screen (minus 1 for menu text = 12)
 			children_to_show = self.children[self.current_selected-11:self.current_selected+1]
 			for i, child in enumerate(children_to_show, self.current_selected-11):
-				text = up_folder if child == self.parent else f"{child.text}{' ' * (len(child.text) - 29)}" 
+				text = up_folder if child == self.parent else f"{child.text}{' ' * (29 - len(child.text))}" 
 				if i != self.current_selected:
 					# a line is 18 pixels high at standard font
 					screen.write_text(0, line*18, text, black, white)
